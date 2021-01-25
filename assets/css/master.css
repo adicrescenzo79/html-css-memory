@@ -24,6 +24,12 @@ header h1{
   border: 1px solid black;
 }
 
+.tavola{
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .tavola .carta{
   background-image: url('../img/pattern.png');
   background-repeat: repeat;
@@ -49,10 +55,6 @@ header h1{
   background-size: contain;
 }
 
-.tavola .bike:hover{
-  background-image: url('../img/noun_Bicycle_3134821.png');
-}
-
 .carta:hover h2{
   position: absolute;
   font-size: 2.5vw;
@@ -60,14 +62,68 @@ header h1{
   left: 20%;
 }
 
-.bike h2{
+/* balloon */
+.tavola .balloon:hover{
+  background-image: url('../img/balloon.png');
+}
+
+.balloon h2:after{
+  content: "Balloon";
+  color: purple;
+}
+/* balloon */
+
+/* bike */
+.tavola .bike:hover{
+  background-image: url('../img/bike.png');
+}
+
+.bike h2:after{
+  content: "Bicycle";
   color: red;
 }
+/* bike */
 
-
-
-.tavola{
-  content: "";
-  display: table;
-  clear: both;
+/* cruise */
+.tavola .cruise:hover{
+  background-image: url('../img/cruise.png');
 }
+
+.cruise h2:after{
+  content: "Cruise Ship";
+  color: yellow;
+}
+/* cruise */
+
+/* sub */
+.tavola .sub:hover{
+  background-image: url('../img/sub.png');
+}
+
+.sub h2:after{
+  content: "Submarine";
+  color: green;
+}
+/* sub */
+
+/* tractor */
+.tavola .tractor:hover{
+  background-image: url('../img/tractor.png');
+}
+
+.tractor h2:after{
+  content: "Tractor";
+  color: orange;
+}
+/* tractor */
+
+/* tram */
+.tavola .tram:hover{
+  background-image: url('../img/tram.png');
+}
+
+.tram h2:after{
+  content: "Tram";
+  color: blue;
+}
+/* tram */
