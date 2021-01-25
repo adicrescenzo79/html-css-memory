@@ -31,6 +31,7 @@ header h1{
   background-position: center;
   background-size: contain;
   position: relative;
+  border-radius: 10px;
 }
 
 .bike{
@@ -46,4 +47,15 @@ header h1{
 
 .bike h2{
   color: red;
+}
+
+.tavola .carta:hover{
+  background-image: url('../img/pattern.png');
+  background-repeat: repeat;
+  width: 20%;
+  height: 30%;
+}
+
+.carta:hover h2{
+  font-size: 0;
 }
